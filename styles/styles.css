@@ -1,0 +1,45 @@
+
+@font-face {
+  font-family: 'Oswald';
+  font-style: normal;
+  font-weight: 500;
+  src: local("")
+  url("../fonts/oswald-v47-cyrillic-regular.woff2") format("woff2"),
+    url("../fonts/oswald-v47-cyrillic-regular.woff") format("woff");
+
+}
+
+@font-face {
+  font-family: 'Monsterrat';
+  font-style: normal;
+  font-weight: 400;
+  src: local('')
+    url('../fonts/montserrat-v23-cyrillic-regular.woff2') format('woff2'),
+    url('../fonts/montserrat-v23-cyrillic-regular.woff') format('woff');
+}
+
+body {
+background-color:red;
+box-sizing: border-box;
+}
+
+.section-up {
+  background-image: url(../images/promo.jpg);
+}
+
+.container{
+  width: 1440px;
+  border: 1px solid red;
+}
+
+h1 {
+font-family: 'Oswald', 'sans-serif';
+font-style: normal;
+font-weight: 500;
+font-size: 60px;
+
+}
+
+h2 {
+
+}
