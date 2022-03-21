@@ -1,0 +1,26 @@
+@font-face {
+  font-family: 'Oswald';
+  font-style: normal;
+  font-weight: 500;
+  src: local("")
+  url("../ski-school-borisov/fonts/oswald-v47-cyrillic-600.woff2") format("woff2")
+    url("../ski-school-borisov/fonts/oswald-v47-cyrillic-600.woff2") format("woff");
+
+}
+
+@font-face {
+  font-family: 'Monsterrat';
+  font-style: normal;
+  font-weight: ;
+  src: url('FileName.eot');
+  src: url('FileName.eot?#iefix') format('embedded-opentype'),
+     url('FileName.woff') format('woff'),
+     url('FileName.ttf') format('truetype'),
+     url('FileName.svg#Oswald') format('svg');
+
+}
+
+h2 {
+  font-family:'Oswald', 'sans-serif';
+
+}
