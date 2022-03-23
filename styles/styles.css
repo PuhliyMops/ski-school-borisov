@@ -4,7 +4,7 @@
   font-style: normal;
   font-weight: 500;
   src: local("")
-  url("../fonts/oswald-v47-cyrillic-regular.woff2") format("woff2"),
+    url("../fonts/oswald-v47-cyrillic-regular.woff2") format("woff2"),
     url("../fonts/oswald-v47-cyrillic-regular.woff") format("woff");
 
 }
@@ -18,26 +18,69 @@
     url('../fonts/montserrat-v23-cyrillic-regular.woff') format('woff');
 }
 
-body {
-background-color:red;
-box-sizing: border-box;
+*{
+  box-sizing: border-box;
 }
 
-.section-up {
-  background-image: url(../images/promo.jpg);
+body {
+
 }
 
 .container{
   width: 1440px;
   border: 1px solid red;
+  display: flex;
+  flex-basis: 33.33%;
+  justify-content: space-between;
+  flex-wrap: nowrap;
 }
 
-h1 {
-font-family: 'Oswald', 'sans-serif';
-font-style: normal;
-font-weight: 500;
-font-size: 60px;
+.header{
+  background-color: #66D1FF;
+  flex-basis: 33.33%;
+}
 
+.header-wrap {
+
+}
+
+.btn {
+
+}
+
+.header-logo{
+  width: 295px;
+
+}
+
+.header-number{
+  font-family:'Monsterrat';
+  font-style: normal;
+  font-weight: 500;
+  font-size: 28px;
+}
+
+.main{
+
+}
+
+.section-up {
+  background-repeat: no-repeat;
+}
+
+.promo{
+  display: block;
+  max-width: 100%;
+}
+
+
+h1 {
+  font-family: 'Oswald', 'sans-serif';
+  font-style: normal;
+  text-decoration-color: #fff;
+  font-weight: 500;
+  font-size: 60px;
+  text-transform: uppercase;
 }
 
 h2 {
