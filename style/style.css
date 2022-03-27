@@ -10,7 +10,17 @@
 }
 
 @font-face {
-  font-family: 'Monsterrat';
+  font-family: 'Oswald';
+  font-style: normal;
+  font-weight: 600;
+  src: local("")
+    url("../fonts/oswald-v47-cyrillic-600.woff2") format("woff2"),
+    url("../fonts/oswald-v47-cyrillic-600.woff") format("woff");
+
+}
+
+@font-face {
+  font-family: 'Montserrat';
   font-style: normal;
   font-weight: 400;
   src: local('')
@@ -18,32 +28,13 @@
     url('../fonts/montserrat-v23-cyrillic-regular.woff') format('woff');
 }
 
-h1 {
-  font-family: 'Oswald', 'sans-serif';
+@font-face {
+  font-family: 'Montserrat';
   font-style: normal;
-  text-decoration-color: #fff;
-  font-weight: 500;
-  font-size: 60px;
-  text-transform: uppercase;
-  padding-top: 240px;
-}
-
-h2 {
-
-}
-
-h3 {
-  font-family: 'Oswald';
-  font-style: normal;
-  font-weight: 500;
-  font-size: 32px;
-  line-height: 167%;
-  /* width: 313px;
-  height: 53px;
-  left: 953px;
-  top: 350px; */
-  text-transform: uppercase;
-  color: #060D10;
+  font-weight: 700;
+  src: local('')
+    url('../fonts/montserrat-v23-cyrillic-700.woff2') format('woff2'),
+    url('../fonts/montserrat-v23-cyrillic-700.woff') format('woff');
 }
 
 * {
@@ -77,13 +68,12 @@ img {
   justify-content: space-between;
 }
 
-.header-btn{
+.header-btn {
   display: inline-block;
-  padding-left: 80px;
   padding-top: 8px;
   min-width: 276px;
   height: 45px;
-  font-family: 'Monsterrat';
+  font-family: 'Montserrat', 'sans-serif';
   font-weight: 500;
   font-size: 24px;
   line-height: 29px;
@@ -96,69 +86,137 @@ img {
   cursor: pointer;
 }
 
-.header-logo{
+.header-logo  {
   width: 295px;
   height: 50px;
 }
 
-.header-number{
-  font-family: 'Montserrat';
+.header-number  {
+  font-family: 'Montserrat', 'sans-serif';
   font-style: normal;
   color: #060D10;
   font-weight: 500;
   font-size: 28px;
   line-height: 34px;
   display: flex;
-  align-items: center;
-  text-align: center;
   text-decoration: none;
-  padding-right: 81px;
 }
 
 
 
 .learning {
-  background-repeat: no-repeat;
-}
-
-.learning-pic{
   display: block;
   max-width: 100%;
+  padding: 230px;
+  background-image: url('../images/promo.jpg');
+  background-repeat: no-repeat;
+  background-position: center;
+  background-size: cover;
+}
+
+.learning-heading {
+  font-family: 'Oswald', 'sans-serif';
+  font-style:normal;
+  color: #fff;
+  font-weight: 500;
+  font-size: 60px;
+  line-height: 89px;
+  text-align: center;
+  text-transform: uppercase;
+  text-shadow: 1px 1px 2px #060D10;
+}
+
+.learning-text {
+  font-family: 'Montserrat', 'sans-serif';
+  font-style: normal;
+  font-weight: 500;
+  font-size: 32px;
+  line-height: 39px;
+  color: #fff;
+  text-align: center;
+  text-shadow: 1px 1px 2px #060D10;
 }
 
 .features {
   background-color: rgba(102, 209, 255, 0.1);
 }
 
-.features-list{
-  display: flex;
-  flex-wrap: wrap;
-  flex-basis: 33.33%;
-  margin-left: 15px;
-  margin-right: 15px;
+.features-promo {
+  font-family: 'Oswald', 'sans-serif';
+  font-style: normal;
+  font-weight: 500;
+  font-size: 48px;
+  line-height: 167%;
+  text-align: center;
+  text-transform: uppercase;
+  color: #060D10;
 }
 
-.features-item{
+.features-list  {
+  display: flex;
+  flex-wrap: wrap;
+  margin-left: -15px;
+  margin-right: -15px;
+}
+
+.features-item  {
   width: 33.33%;
   padding: 15px;
 }
 
-.features-card{
+.features-card  {
   height: 100%;
   padding: 50px 40px;
 }
 
 .features-heading {
-  margin-top: 0;
-  font-family: "Oswald", sans-serif;
+  font-family: 'Oswald', 'sans-serif';
+  font-style: normal;
   font-weight: 500;
-  font-size: 48px;
-  line-height: 62px;
+  font-size: 32px;
+  line-height: 167%;
+  text-transform: uppercase;
+
 }
 
 .features-desc {
-  margin-bottom: 0;
-  font-weight: 400;
-  font-size: 32px;
-  line-height: 130%;
+font-family: 'Montserrat', 'sans-serif';
+font-style: normal;
+font-weight: 400;
+font-size: 26px;
+line-height: 140%;
+color: #060D10;
+mix-blend-mode: normal;
+opacity: 0.8;
+}
+
+.lead {
+  display: flex;
+  flex-wrap: nowrap;
+
+}
+
+.lead-promo {
+  font-family: 'Oswald';
+  font-style: normal;
+  font-weight: 500;
+  font-size: 48px;
+  line-height: 167%;
+  text-align: center;
+  text-transform: uppercase;
+  color: #060D10;
+}
+
+.footer {
+  background-color: #060D10;
+}
+
+.footer-join {
+ font-family: 'Montserrat';
+font-style: normal;
+font-weight: 500;
+font-size: 20px;
+line-height: 167%;
+text-align: center;
+color: #FFFFFF;
 }
