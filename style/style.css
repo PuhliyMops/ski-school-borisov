@@ -104,15 +104,18 @@ img {
 
 
 .learning {
-  background-color: rgba(6, 13, 16, 0.25);
+  max-height: 766px;
   padding: 230px 0;
   margin: 0 auto;
-  align-items: center;
   text-align: center;
   background-image: url("../images/promo.jpg");
   background-repeat: no-repeat;
   background-size: cover;
   background-position: center center;
+}
+
+.learning-wrap {
+  background-color: rgba(6, 13, 16, 0.25);
 }
 
 .learning-heading {
@@ -139,7 +142,7 @@ img {
 }
 
 .features {
-  background-color:rgba(102, 209, 255, 0.1);
+  background-color:rgba(102, 209, 255, 0.2);
   mix-blend-mode: normal;
 }
 
@@ -157,18 +160,11 @@ img {
 .features-list  {
   display: flex;
   flex-wrap: wrap;
+  justify-content: space-between;
 }
 
 .features-item  {
-  width: 33.33%;
-  padding: 15px;
-  padding-left: 15px;
-  padding-right: 15px;
-}
-
-.features-card  {
-  height: 100%;
-  padding: 50px 40px;
+  flex-basis: 33.33%;
 }
 
 .features-heading {
@@ -178,7 +174,6 @@ img {
   font-size: 32px;
   line-height: 167%;
   text-transform: uppercase;
-
 }
 
 .features-desc {
@@ -195,7 +190,7 @@ img {
 .lead {
   align-items: center;
   text-align: center;
-  background: linear-gradient(208.35deg, rgba(102, 209, 255, 0.1) 43.85%, rgba(196, 196, 196, 0.1) 43.86%);
+  background: linear-gradient(208.35deg, rgba(102, 209, 255, 0.2) 43.85%, rgba(196, 196, 196, 0.1) 43.86%);
 }
 
 .lead-wrap {
@@ -261,14 +256,13 @@ img {
 }
 
 .social {
-  display: block;
-  list-style: none;
-  margin: 0;
-  padding: 0;
+  display: flex
 }
 
 .social-item {
-  margin-left: 15px;
+  list-style:none;
+  margin: 0;
+  padding-right: 20px;
 }
 
 .social-link {
